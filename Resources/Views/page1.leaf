@@ -1,0 +1,9 @@
+#embed("table")
+
+#set("content") {
+  <h1>This is the actual page</h1>
+
+  #get(tableContent)
+}
+
+#embed("base")

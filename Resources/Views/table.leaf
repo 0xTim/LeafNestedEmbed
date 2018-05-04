@@ -1,0 +1,18 @@
+#set("tableContent") {
+  <h2>Here is a table</h2>
+
+  <table class="table table-bordered table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th>
+            Name
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        #for(user in users) {
+          <tr><td>#(user.name)</td></tr>
+        }
+      </tbody>
+    </table>
+}
